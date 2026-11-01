@@ -1,6 +1,5 @@
 
 /* Typographic and Stylistic Changes */
-
 * {
     box-sizing: border-box;
 }
@@ -63,4 +62,111 @@ h3 {
 
 .btn:hover {
     background-color: #276749;
+}
+
+/* Structural Changes */
+.site-header {
+    padding: 16px 0;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #2D3748;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #2F855A;
+    text-decoration: underline;
+}
+
+.logo:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Changes */
+.hero {
+    background-color: #F0FFF4;
+}
+
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.hero-text h1 {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+
+/* Feature Formatting */
+
+.features h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 48px;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.feature {
+    background-color: #F7FAFC;
+    padding: 32px;
+    border-radius: 12px;
+}
+
+.feature img {
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 16px;
+}
+
+.feature h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.feature p {
+    margin: 0;
 }
